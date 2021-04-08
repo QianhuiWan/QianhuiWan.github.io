@@ -1,4 +1,5 @@
 theme: jekyll-theme-hacker
 title: Qianhui Wan, gecko
 description: Personal website
+show_downloads: true 
 logo: logo.jpeg
