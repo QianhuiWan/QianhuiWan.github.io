@@ -2,5 +2,5 @@
 theme: jekyll-theme-minimal
 title: Qianhui Wan
 description: Personal website
-#show_downloads: true 
+show_downloads: true 
 logo: logo.jpeg
