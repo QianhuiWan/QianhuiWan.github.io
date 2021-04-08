@@ -2,5 +2,5 @@
 theme: jekyll-theme-minimal
 title: "Hi there, I'm Qianhui Wan!"
 description: "I'm best known as the innocent lizard from deserts. Trust me."
-show_downloads: true 
+show_downloads: false 
 logo: logo.jpeg
