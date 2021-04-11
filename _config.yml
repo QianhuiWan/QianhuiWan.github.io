@@ -3,4 +3,4 @@ theme: jekyll-theme-minimal
 title: "Qianhui, gecko"
 description: "I'm best known as the innocent lizard from deserts. Trust me."
 show_downloads: false 
-logo: image/myLogo.jpeg
+logo: /image/myLogo.jpeg
