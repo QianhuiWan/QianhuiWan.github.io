@@ -42,6 +42,23 @@
         .content-section h2 {
             color: #6a0dad; /* 紫色 */
         }
+        .blog-post {
+            margin-bottom: 20px;
+        }
+        .blog-post h3 {
+            margin: 0;
+            color: #f4a460; /* 深黄色 */
+        }
+        .blog-post p {
+            margin: 5px 0;
+        }
+        .photo-gallery img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            margin: 10px;
+            border: 3px solid #6a0dad; /* 紫色 */
+        }
         footer {
             background-color: #f4e1a1; /* 柔和的黄色 */
             padding: 10px;
@@ -71,15 +88,40 @@
         </section>
         <section id="blog" class="content-section">
             <h2>博客</h2>
-            <p>这里将展示我的博客文章。</p>
+            <div class="blog-post">
+                <h3>博客文章标题1</h3>
+                <p>发布日期：2024年7月29日</p>
+                <p>这是我的第一篇博客文章内容摘要...</p>
+            </div>
+            <div class="blog-post">
+                <h3>博客文章标题2</h3>
+                <p>发布日期：2024年7月30日</p>
+                <p>这是我的第二篇博客文章内容摘要...</p>
+            </div>
         </section>
         <section id="photos" class="content-section">
             <h2>照片</h2>
-            <p>这里将展示一些我喜欢的照片。</p>
+            <div class="photo-gallery">
+                <img src="photo1.jpg" alt="照片1">
+                <img src="photo2.jpg" alt="照片2">
+                <img src="photo3.jpg" alt="照片3">
+                <img src="photo4.jpg" alt="照片4">
+            </div>
+        </section>
+        <section id="contact" class="content-section">
+            <h2>联系</h2>
+            <p>你可以通过以下方式联系我：</p>
+            <p>电子邮件：<a href="mailto:example@example.com">example@example.com</a></p>
+            <p>电话：+123-456-7890</p>
+            <p>社交媒体：
+                <a href="https://twitter.com/yourprofile" target="_blank">Twitter</a> |
+                <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a> |
+                <a href="https://www.instagram.com/yourprofile" target="_blank">Instagram</a>
+            </p>
         </section>
     </main>
     <footer>
-        <p>联系我：<a href="mailto:example@example.com">example@example.com</a></p>
+        <p>&copy; 2024 万千惠的个人网页. 版权所有.</p>
     </footer>
 </body>
 </html>
