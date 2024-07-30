@@ -11,11 +11,13 @@
             color: #333; /* 黑色文字 */
             margin: 0;
             padding: 0;
+            overflow-x: hidden;
         }
         header {
             background-color: #f4e1a1; /* 柔和的黄色 */
             padding: 20px;
             text-align: center;
+            animation: slideDown 1s ease-out;
         }
         header h1 {
             margin: 0;
@@ -26,6 +28,7 @@
             background-color: #6a0dad; /* 紫色 */
             padding: 10px;
             text-align: center;
+            animation: fadeIn 1.5s ease-out;
         }
         nav a {
             margin: 0 15px;
@@ -38,6 +41,7 @@
         }
         .content-section {
             margin-bottom: 30px;
+            animation: fadeIn 2s ease-out;
         }
         .content-section h2 {
             color: #6a0dad; /* 紫色 */
@@ -52,22 +56,44 @@
         .blog-post p {
             margin: 5px 0;
         }
+        .photo-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
         .photo-gallery img {
             width: 200px;
             height: 200px;
             object-fit: cover;
             margin: 10px;
             border: 3px solid #6a0dad; /* 紫色 */
+            transition: transform 0.3s ease;
+        }
+        .photo-gallery img:hover {
+            transform: scale(1.1);
         }
         footer {
             background-color: #f4e1a1; /* 柔和的黄色 */
             padding: 10px;
             text-align: center;
             color: #333; /* 黑色文字 */
+            animation: slideUp 1s ease-out;
         }
         footer a {
             color: #6a0dad; /* 紫色 */
             text-decoration: none;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideDown {
+            from { transform: translateY(-100%); }
+            to { transform: translateY(0); }
+        }
+        @keyframes slideUp {
+            from { transform: translateY(100%); }
+            to { transform: translateY(0); }
         }
     </style>
 </head>
