@@ -14,10 +14,9 @@
             overflow-x: hidden;
         }
         header {
-            background-color: #f4e1a1; /* 柔和的黄色 */
+            background-color: #f9f3c4; /* 更柔和的黄色 */
             padding: 20px;
             text-align: center;
-            animation: slideDown 1s ease-out;
         }
         header h1 {
             margin: 0;
@@ -28,7 +27,6 @@
             background-color: #6a0dad; /* 紫色 */
             padding: 10px;
             text-align: center;
-            animation: fadeIn 1.5s ease-out;
         }
         nav a {
             margin: 0 15px;
@@ -38,26 +36,20 @@
             transition: color 0.3s ease;
         }
         nav a:hover {
-            color: #f4e1a1; /* 黄色 */
+            color: #f9f3c4; /* 更柔和的黄色 */
         }
         main {
             padding: 20px;
         }
         .content-section {
             margin-bottom: 30px;
-            opacity: 0;
-            animation: fadeIn 2s ease-out forwards;
         }
         .content-section h2 {
             color: #6a0dad; /* 紫色 */
-            transition: color 0.3s ease;
-        }
-        .content-section h2:hover {
-            color: #f4a460; /* 深黄色 */
+            margin-bottom: 10px;
         }
         .blog-post {
             margin-bottom: 20px;
-            animation: slideInLeft 1s ease-out;
         }
         .blog-post h3 {
             margin: 0;
@@ -80,24 +72,22 @@
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
         .photo-gallery img:hover {
-            transform: scale(1.1);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         .music-player {
             text-align: center;
             margin: 20px 0;
-            animation: fadeIn 3s ease-out;
         }
         .music-player audio {
             width: 100%;
             max-width: 600px;
         }
         footer {
-            background-color: #f4e1a1; /* 柔和的黄色 */
+            background-color: #f9f3c4; /* 更柔和的黄色 */
             padding: 10px;
             text-align: center;
             color: #333; /* 黑色文字 */
-            animation: slideUp 1s ease-out;
         }
         footer a {
             color: #6a0dad; /* 紫色 */
@@ -107,21 +97,22 @@
         footer a:hover {
             color: #f4a460; /* 深黄色 */
         }
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2em;
+            }
+            nav a {
+                font-size: 1em;
+            }
+            .photo-gallery img {
+                width: 150px;
+                height: 150px;
+            }
         }
-        @keyframes slideDown {
-            from { transform: translateY(-100%); }
-            to { transform: translateY(0); }
-        }
-        @keyframes slideUp {
-            from { transform: translateY(100%); }
-            to { transform: translateY(0); }
-        }
-        @keyframes slideInLeft {
-            from { transform: translateX(-100%); }
-            to { transform: translateX(0); }
+        @media (min-width: 768px) {
+            header h1 {
+                font-size: 2.2em;
+            }
         }
     </style>
 </head>
