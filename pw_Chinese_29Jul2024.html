@@ -35,19 +35,29 @@
             text-decoration: none;
             color: #fff; /* 白色 */
             font-size: 1.2em;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #f4e1a1; /* 黄色 */
         }
         main {
             padding: 20px;
         }
         .content-section {
             margin-bottom: 30px;
-            animation: fadeIn 2s ease-out;
+            opacity: 0;
+            animation: fadeIn 2s ease-out forwards;
         }
         .content-section h2 {
             color: #6a0dad; /* 紫色 */
+            transition: color 0.3s ease;
+        }
+        .content-section h2:hover {
+            color: #f4a460; /* 深黄色 */
         }
         .blog-post {
             margin-bottom: 20px;
+            animation: slideInLeft 1s ease-out;
         }
         .blog-post h3 {
             margin: 0;
@@ -67,10 +77,20 @@
             object-fit: cover;
             margin: 10px;
             border: 3px solid #6a0dad; /* 紫色 */
-            transition: transform 0.3s ease;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
         .photo-gallery img:hover {
             transform: scale(1.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .music-player {
+            text-align: center;
+            margin: 20px 0;
+            animation: fadeIn 3s ease-out;
+        }
+        .music-player audio {
+            width: 100%;
+            max-width: 600px;
         }
         footer {
             background-color: #f4e1a1; /* 柔和的黄色 */
@@ -82,6 +102,10 @@
         footer a {
             color: #6a0dad; /* 紫色 */
             text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        footer a:hover {
+            color: #f4a460; /* 深黄色 */
         }
         @keyframes fadeIn {
             from { opacity: 0; }
@@ -95,6 +119,10 @@
             from { transform: translateY(100%); }
             to { transform: translateY(0); }
         }
+        @keyframes slideInLeft {
+            from { transform: translateX(-100%); }
+            to { transform: translateX(0); }
+        }
     </style>
 </head>
 <body>
@@ -105,6 +133,7 @@
         <a href="#about">关于我</a>
         <a href="#blog">博客</a>
         <a href="#photos">照片</a>
+        <a href="#music">音乐</a>
         <a href="#contact">联系</a>
     </nav>
     <main>
@@ -132,6 +161,15 @@
                 <img src="photo2.jpg" alt="照片2">
                 <img src="photo3.jpg" alt="照片3">
                 <img src="photo4.jpg" alt="照片4">
+            </div>
+        </section>
+        <section id="music" class="content-section">
+            <h2>音乐</h2>
+            <div class="music-player">
+                <audio controls>
+                    <source src="music1.mp3" type="audio/mp3">
+                    您的浏览器不支持音频播放。
+                </audio>
             </div>
         </section>
         <section id="contact" class="content-section">
